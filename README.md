@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/license-GPL--3.0-blue?style=for-the-badge" alt="License">
 </p>
 
-# 🎮 Bastet Pico 2
+# Bastet Pico 2
 
 **Bastard Tetris** — A Tetris clone where the AI deliberately picks the **worst possible piece** for the player. Built from scratch for the **Raspberry Pi Pico 2** with a 128×64 OLED display and 3-button controls.
 
@@ -13,7 +13,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 - **Bastet AI Engine** — Evaluates all 7 tetrominoes × 4 rotations × every column position per turn, then picks the worst piece with weighted probability (80% worst / 12% second-worst / 6% third / 2% fourth)
 - **Portrait OLED Display** — 128×64 SH1106 display rotated 90° CW to create a 64×128 portrait viewport, maximizing vertical space for the Tetris board
@@ -27,7 +27,7 @@
 
 ---
 
-## 🛠 Hardware Requirements
+## Hardware Requirements
 
 | Component | Specification | Qty |
 |-----------|--------------|:---:|
@@ -40,7 +40,7 @@
 
 ---
 
-## ⚡ Wiring Diagram
+## Wiring Diagram
 
 ### OLED Display (I2C)
 
@@ -113,7 +113,7 @@ Raspberry Pi Pico 2 — Pin Assignment
 
 ---
 
-## 🎮 Controls
+## Controls
 
 | Input | Action |
 |-------|--------|
@@ -127,7 +127,7 @@ Raspberry Pi Pico 2 — Pin Assignment
 
 ---
 
-## 🧠 How the Bastet AI Works
+## How the Bastet AI Works
 
 The Bastet algorithm runs every time a new piece needs to be spawned:
 
@@ -151,7 +151,7 @@ This ensures the player *usually* gets the worst possible piece, but occasional 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 bastet_micropython/
@@ -177,7 +177,7 @@ bastet_micropython/
 
 ---
 
-## 🚀 Installation & Deployment
+## Installation & Deployment
 
 ### Prerequisites
 
@@ -199,7 +199,7 @@ bastet_micropython/
 
 #### 2. Wire the Hardware
 
-Follow the [wiring diagram](#-wiring-diagram) above. Quick reference:
+Follow the [wiring diagram](#wiring-diagram) above. Quick reference:
 
 ```
 GP0 → SDA     GP1 → SCL     3V3 → VCC     GND → GND
@@ -261,7 +261,7 @@ Disconnect and reconnect USB (or use an external power source). The game starts 
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 | Problem | Likely Cause | Solution |
 |---------|-------------|----------|
@@ -276,7 +276,7 @@ Disconnect and reconnect USB (or use an external power source). The game starts 
 
 ---
 
-## 📐 Configuration
+## Configuration
 
 All hardware and game parameters are defined in [`config.py`](config.py). Key values:
 
@@ -291,7 +291,7 @@ All hardware and game parameters are defined in [`config.py`](config.py). Key va
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **GNU General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
 
